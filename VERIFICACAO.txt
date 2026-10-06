@@ -1,0 +1,44 @@
+PAUTA 0.2 — VERIFICAÇÃO DA ENTREGA
+Data: 05/10/2026
+
+REALIZADO
+- npm run check: 14.459 verificações passaram.
+  Compassos com sementes reprodutíveis, valores permitidos, notas nas faixas
+  e claves esperadas, desenho dentro dos limites, duração dos ciclos,
+  quiálteras, 6/8, pontuação dos toques e validação de backups.
+- npm run lint: sem erros.
+- npm run build: compilação de produção e verificação TypeScript concluídas.
+  Todas as rotas foram exportadas para out.
+- Chromium automatizado: 21 verificações passaram, sem erros de execução.
+  Página inicial; resposta correta em sol e fá; botão de próxima nota;
+  gravação e recarga; silêncio pontuado como zero; tentativa cancelada sem
+  gravação; toques com temporização recebendo pontuação; escuta de poli;
+  exportação; rejeição de backup inválido sem alterar os dados; restauração;
+  cinco rotas em 390px sem transbordamento horizontal da página.
+- Conferência visual de notas, polirritmos e versão móvel por capturas de tela.
+- Servidor local e versão compilada executados durante os testes.
+
+O QUE FOI COMPLETADO
+- Telas de leitura, ritmo, polirritmos e progresso que não vieram no ZIP.
+- Desenho musical com claves, linhas suplementares, acidentes, armaduras,
+  pausas, pontos e proporções de quiálteras; alinhamento temporal das vozes.
+- Roda dos polirritmos; contagem; prática com uma voz muda; resultados.
+- Exportação/restauração de progresso com validação e confirmação.
+- Mensagem para armazenamento bloqueado ou dados inválidos.
+- Avaliação dos ataques por correspondência global em ordem temporal.
+- Fonte musical local; remoção da dependência de fontes Google.
+- Iniciador Windows usando a versão compilada, sem npm install ao abrir.
+
+OBSERVAÇÕES
+O original scripts/check-music.ts do ZIP estava correto. A corrupção observada
+anteriormente estava apenas na cópia codificada em _dump2.json. Esses dumps
+antigos não foram incluídos na nova entrega, para não sobrescrever o código.
+A versão original enviada pelo usuário não foi alterada.
+
+LIMITES DO TESTE
+Os testes foram executados em Linux/Chromium. Não houve execução do .bat no
+Windows do usuário, nem avaliação auditiva humana ou medição do atraso de
+seu equipamento. O iniciador precisa de Node.js instalado. Não há testes
+com teclado MIDI físico; a resposta de notas usa os botões da tela.
+O app mede ataques, não sustentação; não há microfone, sincronização em nuvem,
+conta de usuário ou instalação Android nesta entrega.
